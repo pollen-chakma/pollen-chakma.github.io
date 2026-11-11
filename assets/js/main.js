@@ -255,29 +255,31 @@
     });
   }
 
-  /* ---------- interactive co-author network (research page) ---------- */
+  /* ---------- interactive co-author network (research page) — 3-Column Flow Architecture ---------- */
 
   var nwContainer = document.getElementById("coauthor-network");
   if (nwContainer) {
     var nodes = [
-      { id: "Pollen Chakma", role: "center", papers: 10, desc: "Assistant Professor, WRE, CUET" },
-      { id: "Dr. Aysha Akter", role: "collab", papers: 2, desc: "Professor, Dept. of Civil Engineering, CUET · M.Sc. Supervisor" },
-      { id: "Anika Sirajee", role: "student", papers: 2, desc: "Undergraduate Thesis Advisee · GEE & Climate Extremes" },
-      { id: "Md. Modasshir Rokon", role: "student", papers: 3, desc: "Undergraduate Thesis Advisee · Padma & Ganges River Dynamics" },
-      { id: "Rubayatul Islam Oishe", role: "student", papers: 3, desc: "Undergraduate Thesis Advisee · Padma & Ganges River Dynamics" },
-      { id: "Hera Dutta", role: "ra", papers: 1, desc: "Undergraduate Research Assistant · GIS-MCDM Rainwater Harvesting" },
-      { id: "Sehba Yeamin", role: "ra", papers: 1, desc: "Undergraduate Research Assistant · GIS-MCDM Rainwater Harvesting" },
-      { id: "Md. Mushfiqul Alam", role: "ra", papers: 1, desc: "Undergraduate Research Assistant · GIS-MCDM Rainwater Harvesting" },
-      { id: "Abdullah Al Mahmud", role: "student", papers: 1, desc: "Undergraduate Thesis Advisee · Upper Meghna HEC-RAS 2D" },
-      { id: "Araf Bin Haque Annwoy", role: "student", papers: 1, desc: "Undergraduate Thesis Advisee · Upper Meghna HEC-RAS 2D" },
-      { id: "Md. Rifat Talha Khan", role: "collab", papers: 1, desc: "Faculty Collaborator, WRE, CUET · Groundwater Recharge" },
-      { id: "S. Roy & S. Rahman Apu", role: "collab", papers: 1, desc: "Co-Authors · Padma River Erosion-Accretion Dynamics" },
-      { id: "Md. Samiun Basir", role: "collab", papers: 1, desc: "Assistant Professor, WRE, CUET · PI on Urban Flood Grant" },
-      { id: "Md. Sohel Rana", role: "collab", papers: 1, desc: "IEER, CUET · PI on Multi-Hazard Coastal Resilience Grant" },
-      { id: "Md. Ashraful Islam", role: "collab", papers: 1, desc: "Co-PI on Hybrid Rainwater Harvesting & SHP Grant" }
+      { id: "Pollen Chakma", role: "center", papers: 11, desc: "Assistant Professor, Dept. of Water Resources Engineering, CUET" },
+      // Left Column: Faculty & Principal Collaborators
+      { id: "Prof. Dr. Aysha Akter", role: "collab", col: "left", idx: 0, papers: 2, desc: "Professor, Dept. of Civil Engineering, CUET · M.Sc. Thesis Supervisor (Amphan Surge & SAR)" },
+      { id: "Md. Samiun Basir", role: "collab", col: "left", idx: 1, papers: 1, desc: "Assistant Professor, WRE, CUET · Principal Investigator on Urban Flood Grant" },
+      { id: "Md. Sohel Rana", role: "collab", col: "left", idx: 2, papers: 1, desc: "IEER, CUET · Principal Investigator on Multi-Hazard Coastal Resilience Grant" },
+      { id: "Md. Ashraful Islam", role: "collab", col: "left", idx: 3, papers: 1, desc: "Co-PI on Hybrid Rainwater Harvesting & Small Hydroelectric Plant (SHP) Grant" },
+      { id: "Md. Rifat Talha Khan", role: "collab", col: "left", idx: 4, papers: 1, desc: "Faculty Collaborator, WRE, CUET · Groundwater Recharge Estimation (ICCESD 2020)" },
+      { id: "S. Roy & S. Rahman Apu", role: "collab", col: "left", idx: 5, papers: 1, desc: "Co-Authors · Padma River Erosion-Accretion Dynamics (ICCEI 2025)" },
+      // Right Column: Research Assistants & Thesis Co-Authors
+      { id: "Md. Modasshir Rokon", role: "student", col: "right", idx: 0, papers: 3, desc: "B.Sc. Thesis Advisee · Upper Padma & Ganges River Surface Water Dynamics (3 Papers)" },
+      { id: "Rubayatul Islam Oishe", role: "student", col: "right", idx: 1, papers: 3, desc: "B.Sc. Thesis Advisee · Upper Padma & Ganges River Surface Water Dynamics (3 Papers)" },
+      { id: "Anika Sirajee", role: "student", col: "right", idx: 2, papers: 2, desc: "B.Sc. Thesis Advisee · Cloud Rainfall-Runoff Model & ETCCDI Extreme Indices in GEE" },
+      { id: "Hera Dutta", role: "ra", col: "right", idx: 3, papers: 1, desc: "Undergraduate Research Assistant · GIS-MCDM Rainwater Harvesting Suitability" },
+      { id: "Sehba Yeamin", role: "ra", col: "right", idx: 4, papers: 1, desc: "Undergraduate Research Assistant · GIS-MCDM Rainwater Harvesting Suitability" },
+      { id: "Md. Mushfiqul Alam", role: "ra", col: "right", idx: 5, papers: 1, desc: "Undergraduate Research Assistant · GIS-MCDM Rainwater Harvesting Suitability" },
+      { id: "Abdullah Al Mahmud", role: "student", col: "right", idx: 6, papers: 1, desc: "B.Sc. Thesis Advisee · Upper Meghna River 2D Flood Inundation (HEC-RAS 2D)" },
+      { id: "Araf Bin Haque Annwoy", role: "student", col: "right", idx: 7, papers: 1, desc: "B.Sc. Thesis Advisee · Upper Meghna River 2D Flood Inundation (HEC-RAS 2D)" }
     ];
 
-    var width = 860, height = 430, cx = width / 2, cy = height / 2;
+    var width = 940, height = 470, cx = width / 2, cy = height / 2 - 16;
     var svgNS = "http://www.w3.org/2000/svg";
     var stage = document.createElement("div");
     stage.className = "nw-stage";
@@ -286,63 +288,91 @@
     svg.setAttribute("viewBox", "0 0 " + width + " " + height);
     svg.setAttribute("class", "nw-svg");
 
+    // Column Headers inside SVG
+    var headers = [
+      { x: 185, text: "FACULTY & GRANT COLLABORATORS" },
+      { x: cx, text: "PRINCIPAL INVESTIGATOR" },
+      { x: width - 185, text: "RESEARCH ASSISTANTS & CO-AUTHORS" }
+    ];
+    headers.forEach(function (h) {
+      var t = document.createElementNS(svgNS, "text");
+      t.setAttribute("x", h.x);
+      t.setAttribute("y", 28);
+      t.setAttribute("text-anchor", "middle");
+      t.setAttribute("fill", "var(--muted)");
+      t.setAttribute("font-family", "var(--font-mono)");
+      t.setAttribute("font-size", "10.5");
+      t.setAttribute("font-weight", "600");
+      t.setAttribute("letter-spacing", "1.2");
+      t.textContent = h.text;
+      svg.appendChild(t);
+    });
+
     var infoBar = document.createElement("div");
-    infoBar.style.cssText = "position:absolute;bottom:12px;left:16px;right:16px;padding:10px 16px;border-radius:10px;background:var(--bg);border:1px solid var(--border-strong);font-size:0.86rem;color:var(--text-soft);display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:var(--shadow-sm);";
-    infoBar.innerHTML = '<span><strong>Click or hover any collaborator node</strong> to inspect joint research projects &amp; publications.</span><span style="font-size:0.78rem;color:var(--muted);">15 Collaborators &amp; Co-Authors</span>';
+    infoBar.style.cssText = "position:absolute;bottom:12px;left:16px;right:16px;padding:10px 16px;border-radius:6px;background:var(--bg-raised);border:1px solid var(--border-strong);border-left:4px solid var(--accent);font-size:0.86rem;color:var(--text-soft);display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:var(--shadow-sm);";
+    infoBar.innerHTML = '<span><strong>Hover or click any collaborator node</strong> to view joint research grants and co-authored papers.</span><span style="font-family:var(--font-mono);font-size:0.76rem;color:var(--accent);">15 Active Collaborators</span>';
 
-    var others = nodes.slice(1);
-    others.forEach(function (n, idx) {
-      var angle = (2 * Math.PI * idx) / others.length - Math.PI / 2;
-      var rx = idx % 2 === 0 ? 290 : 210;
-      var ry = idx % 2 === 0 ? 155 : 115;
-      n.x = cx + Math.cos(angle) * rx;
-      n.y = cy - 15 + Math.sin(angle) * ry;
-    });
     nodes[0].x = cx;
-    nodes[0].y = cy - 15;
+    nodes[0].y = cy;
 
-    // Draw links
-    others.forEach(function (n) {
-      var line = document.createElementNS(svgNS, "line");
-      line.setAttribute("x1", nodes[0].x);
-      line.setAttribute("y1", nodes[0].y);
-      line.setAttribute("x2", n.x);
-      line.setAttribute("y2", n.y);
-      line.setAttribute("stroke", "var(--accent)");
-      line.setAttribute("stroke-opacity", "0.28");
-      line.setAttribute("stroke-width", Math.min(4, 1.2 + n.papers * 0.7));
-      svg.appendChild(line);
+    nodes.slice(1).forEach(function (n) {
+      if (n.col === "left") {
+        n.x = 185;
+        n.y = 68 + n.idx * 56;
+      } else {
+        n.x = width - 185;
+        n.y = 58 + n.idx * 43;
+      }
     });
 
-    // Draw nodes
+    // Draw curved cubic Bezier flow links
+    nodes.slice(1).forEach(function (n) {
+      var path = document.createElementNS(svgNS, "path");
+      var midX = (nodes[0].x + n.x) / 2;
+      var d = "M " + nodes[0].x + " " + nodes[0].y + " C " + midX + " " + nodes[0].y + ", " + midX + " " + n.y + ", " + n.x + " " + n.y;
+      path.setAttribute("d", d);
+      path.setAttribute("fill", "none");
+      path.setAttribute("stroke", n.col === "left" ? "var(--accent-amber)" : "var(--accent-2)");
+      path.setAttribute("stroke-opacity", "0.38");
+      path.setAttribute("stroke-width", Math.min(4.5, 1.4 + n.papers * 0.8));
+      svg.appendChild(path);
+    });
+
+    // Draw pill/card nodes
     nodes.forEach(function (n) {
       var g = document.createElementNS(svgNS, "g");
       g.style.cursor = "pointer";
 
-      var circle = document.createElementNS(svgNS, "circle");
-      circle.setAttribute("cx", n.x);
-      circle.setAttribute("cy", n.y);
-      var r = n.role === "center" ? 22 : 10 + n.papers * 2.5;
-      circle.setAttribute("r", r);
+      var isCenter = n.role === "center";
+      var boxW = isCenter ? 176 : 196;
+      var boxH = isCenter ? 46 : 30;
 
-      var fill = "var(--accent)";
-      if (n.role === "center") fill = "var(--text)";
-      else if (n.role === "ra") fill = "var(--accent-2)";
-      else if (n.role === "collab") fill = "var(--accent-amber)";
-      circle.setAttribute("fill", fill);
-      circle.setAttribute("stroke", "var(--bg-raised)");
-      circle.setAttribute("stroke-width", "2.5");
+      var rect = document.createElementNS(svgNS, "rect");
+      rect.setAttribute("x", n.x - boxW / 2);
+      rect.setAttribute("y", n.y - boxH / 2);
+      rect.setAttribute("width", boxW);
+      rect.setAttribute("height", boxH);
+      rect.setAttribute("rx", isCenter ? "8" : "5");
+
+      var strokeCol = "var(--accent)";
+      if (n.role === "ra") strokeCol = "var(--accent-2)";
+      else if (n.role === "collab") strokeCol = "var(--accent-amber)";
+
+      rect.setAttribute("fill", isCenter ? "var(--accent)" : "var(--bg-raised)");
+      rect.setAttribute("stroke", strokeCol);
+      rect.setAttribute("stroke-width", isCenter ? "2.5" : "1.5");
 
       var label = document.createElementNS(svgNS, "text");
       label.setAttribute("x", n.x);
-      label.setAttribute("y", n.y + r + 15);
+      label.setAttribute("y", n.y + 4);
       label.setAttribute("text-anchor", "middle");
-      label.setAttribute("fill", "var(--text)");
-      label.setAttribute("font-size", n.role === "center" ? "13" : "11.5");
-      label.setAttribute("font-weight", n.role === "center" ? "700" : "600");
+      label.setAttribute("fill", isCenter ? "#ffffff" : "var(--text)");
+      label.setAttribute("font-family", isCenter ? "var(--font-display)" : "var(--font-body)");
+      label.setAttribute("font-size", isCenter ? "14" : "11.5");
+      label.setAttribute("font-weight", isCenter ? "700" : "600");
       label.textContent = n.id;
 
-      g.appendChild(circle);
+      g.appendChild(rect);
       g.appendChild(label);
 
       var showInfo = function () {
