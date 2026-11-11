@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research &amp; Lab — Pollen Chakma</title>
+  <meta name="description" content="Research program, funded projects, applied consulting, collaboration network, and research group of Pollen Chakma at CUET.">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="../">Pollen Chakma<span class="brand-dot">.</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="./" class="active">Research</a>
+      <a href="../publications/">Publications</a>
+      <a href="../software/">Apps &amp; Tools</a>
+      <a href="../teaching/">Teaching</a>
+      <a href="../cv/">CV</a>
+      <a href="../posts/">Blog &amp; Gallery</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Research &amp; Lab</h1>
+      <p>
+        My research program combines physics-based numerical modelling, cloud-scale remote sensing,
+        and high-resolution field and UAV surveys to solve critical water resources and climate hazard
+        challenges in coastal, urban, and hilly regions of Bangladesh.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;">
+        <a class="tag-link" href="#overview">Program Overview</a>
+        <a class="tag-link" href="#funded-projects">Funded Projects ($18K)</a>
+        <a class="tag-link" href="#applied-projects">Consulting &amp; Field Projects</a>
+        <a class="tag-link" href="#network">Collaboration Network</a>
+        <a class="tag-link" href="#lab">Research Team &amp; Students</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAM DIAGRAM ============ -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Overview</div>
+        <h2>Research program at a glance</h2>
+        <p class="sub">From core methodological pillars to real-world resilience. Click any foundation to expand details, or an application area to filter related publications.</p>
+      </div>
+      <div class="rprogram reveal">
+
+        <p class="tier-label">Three Methodological Pillars</p>
+        <div class="rp-row rp-3">
+          <button class="rp-tile rp-expand" type="button" aria-expanded="false">
+            <span class="dot dot-g"></span>
+            <h3>Hydrodynamic &amp; Hydrologic Modelling</h3>
+            <p>Delft3D · HEC-RAS 2D · HEC-HMS · SWMM</p>
+            <span class="rp-go rp-toggle">Details <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            <p class="rp-detail" hidden>Developing coupled coastal flow-wave models (Delft3D-FLOW/WAVE, Delft3D-FM), 2D river and Rain-on-Grid flood models (HEC-RAS 2D), catchment runoff models (HEC-HMS), and urban stormwater drainage models (EPA-SWMM).</p>
+          </button>
+          <button class="rp-tile rp-expand" type="button" aria-expanded="false">
+            <span class="dot dot-g"></span>
+            <h3>Satellite Remote Sensing &amp; Cloud GIS</h3>
+            <p>Google Earth Engine · Sentinel-1 SAR · CHIRPS</p>
+            <span class="rp-go rp-toggle">Details <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            <p class="rp-detail" hidden>Harnessing cloud-based planetary computing in Google Earth Engine (JavaScript &amp; Python APIs) to process SAR flood inundation, 40+ years of satellite precipitation extremes (ETCCDI), and SWOT river water elevation datasets.</p>
+          </button>
+          <button class="rp-tile rp-expand" type="button" aria-expanded="false">
+            <span class="dot dot-g"></span>
+            <h3>UAV Photogrammetry &amp; Field Surveys</h3>
+            <p>Drone DTM · LiDAR DEM · Bathymetry</p>
+            <span class="rp-go rp-toggle">Details <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            <p class="rp-detail" hidden>Bridging data scarcity in ungauged watersheds by conducting UAV drone surveys (WebODM, Pix4D), generating high-resolution Digital Terrain Models (DTMs) and orthomosaics, and digitizing nearshore hydrographic and urban drainage networks.</p>
+          </button>
+        </div>
+
+        <div class="rp-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </div>
+
+        <div class="rp-engine">
+          <h3>Physics-Based Modelling · Cloud Earth Observation · Multi-Criteria GIS</h3>
+          <p>Integrated frameworks for data-scarce watersheds &amp; fragile coasts</p>
+        </div>
+
+        <div class="rp-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </div>
+
+        <p class="tier-label">Applied Research Streams</p>
+        <div class="rp-row rp-4">
+          <a class="rp-tile" href="../publications/?q=Amphan"><span class="dot dot-a"></span><h3>Storm Surge &amp; Coastal Hazards</h3><p>Cyclone surge &amp; SAR flood mapping</p><span class="rp-go">View papers →</span></a>
+          <a class="rp-tile" href="../publications/?q=Flood"><span class="dot dot-a"></span><h3>River &amp; Urban Flood Modelling</h3><p>2D inundation &amp; ungauged catchments</p><span class="rp-go">View papers →</span></a>
+          <a class="rp-tile" href="../publications/?q=Precipitation"><span class="dot dot-a"></span><h3>Climate &amp; Hydrologic Extremes</h3><p>ETCCDI indices &amp; trend analytics</p><span class="rp-go">View papers →</span></a>
+          <a class="rp-tile" href="../publications/?q=Rainwater"><span class="dot dot-a"></span><h3>Water Security &amp; Harvesting</h3><p>Hybrid RWH-SHP &amp; GIS-MCDM</p><span class="rp-go">View papers →</span></a>
+        </div>
+
+        <div class="rp-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </div>
+
+        <div class="rp-impact">
+          <span class="lead">Actionable resilience for</span>
+          <span class="rp-chip-aud">Coastal Communities</span>
+          <span class="rp-chip-aud">Hilly &amp; Tribal Regions</span>
+          <span class="rp-chip-aud">Urban Planners</span>
+          <span class="rp-chip-aud">Water Resource Managers</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED WORK ============ -->
+  <section class="section soft" id="featured">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Featured Work</div>
+        <h2>Selected publications &amp; manuscripts</h2>
+        <p class="sub">Representative studies across coastal flood mapping, climate extremes, river hydrodynamics, and rainwater harvesting. See the <a href="../publications/">full publication list</a> for all outputs.</p>
+      </div>
+      <div class="featured-grid">
+        <div class="featured-card reveal">
+          <span class="topic-tag">Sentinel-1 SAR · Coastal Flooding</span>
+          <h3>Flood Mapping in the Coastal Region of Bangladesh Using Sentinel-1 SAR Images: A Case Study of Super Cyclone Amphan</h3>
+          <p class="venue"><strong>Chakma, P.</strong>, &amp; Akter, A. (2021) · <em>Journal of Civil Engineering Forum</em>, 7(3), 267–278</p>
+          <a class="read-link" href="https://doi.org/10.22146/jcef" target="_blank" rel="noopener">Read the paper (DOI) →</a>
+        </div>
+        <div class="featured-card reveal">
+          <span class="topic-tag">ETCCDI · Google Earth Engine</span>
+          <h3>A Long-Term Spatiotemporal Variability Analysis of Precipitation Climate Extreme Indices in Chattogram Using Satellite-Driven Precipitation Data</h3>
+          <p class="venue"><strong>Chakma, P.</strong>, &amp; Sirajee, A. (2025) · <em>ICCEI 2025 Proceedings</em>, pp. 1778–1783</p>
+          <a class="read-link" href="https://icceiruet.org/wp-content/uploads/2025/12/676_Camera-Ready-Final-Paper_ICCEI-2025.pdf" target="_blank" rel="noopener">Read Full Paper (PDF) →</a>
+        </div>
+        <div class="featured-card reveal">
+          <span class="topic-tag">Delft3D-FLOW &amp; WAVE · Storm Surge</span>
+          <h3>Storm Surge Inundation Modelling for Cyclone Amphan in Bangladesh</h3>
+          <p class="venue"><strong>Chakma, P.</strong>, &amp; Akter, A. · <em>Journal of Natural Hazards</em> (Under Review)</p>
+          <a class="read-link" href="#storm-surge-project">View Project Summary →</a>
+        </div>
+        <div class="featured-card reveal">
+          <span class="topic-tag">GIS &amp; AHP-MCDM · Water Security</span>
+          <h3>Optimal Site Selection for Rainwater Harvesting Through a Combined Approach of GIS and MCDM</h3>
+          <p class="venue">Dutta, H., Yeamin, S., Alam, M. M., &amp; <strong>Chakma, P.</strong> · <em>Journal of Water Resources Management</em> (Submitted)</p>
+          <a class="read-link" href="https://doi.org/10.21203/rs.3.rs-8449542/v1" target="_blank" rel="noopener">Read Preprint (Research Square) →</a>
+        </div>
+        <div class="featured-card reveal">
+          <span class="topic-tag">Cloud Hydrology · GEE</span>
+          <h3>A Cloud-Based Rainfall-Runoff Model Using Google Earth Engine</h3>
+          <p class="venue">Sirajee, A., &amp; <strong>Chakma, P.</strong> (2025) · <em>ICCEI 2025 Proceedings</em>, pp. 1754–1759</p>
+          <a class="read-link" href="https://icceiruet.org/wp-content/uploads/2025/12/621_Camera-Ready-Final-Paper_ICCEI-2025.pdf" target="_blank" rel="noopener">Read Full Paper (PDF) →</a>
+        </div>
+        <div class="featured-card reveal">
+          <span class="topic-tag">HEC-RAS 2D · River Inundation</span>
+          <h3>Flood Inundation Mapping of Upper Meghna River of Bangladesh Using HEC-RAS 2D</h3>
+          <p class="venue">Al Mahmud, A., <strong>Chakma, P.</strong>, Islam, A., Bin, A., &amp; Annwoy, H. (2025) · <em>ICCEI 2025 Proceedings</em>, pp. 1742–1747</p>
+          <a class="read-link" href="https://icceiruet.org/wp-content/uploads/2025/12/598_Camera-Ready-Final-Paper_ICCEI-2025.pdf" target="_blank" rel="noopener">Read Full Paper (PDF) →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ONGOING & FUNDED RESEARCH PROJECTS ============ -->
+  <section class="section" id="funded-projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Funded Research Projects</div>
+        <h2>Ongoing &amp; completed research initiatives</h2>
+        <p class="sub">Supported by the Directorate of Research and Extension (DRE), CUET and partial UNDP co-funding (totaling USD 18,000 in competitive research grants). Click any project thumbnail to enlarge.</p>
+      </div>
+
+      <div class="card-grid two">
+        <!-- Project 1: Hybrid Rainwater Harvesting -->
+        <div class="card reveal" id="rwh-project">
+          <div class="badge-row">
+            <span class="badge">Ongoing · Sep 2025 – Aug 2026</span>
+            <span class="badge badge-teal">PI · USD 5,000 (DRE CUET &amp; Partial UNDP)</span>
+          </div>
+          <h3>Design and Implementation of a Hybrid Rainwater Harvesting System for Water-Scarce Hilly Regions of Bangladesh</h3>
+          <div class="card-meta">
+            <span><strong>PI:</strong> Pollen Chakma</span>
+            <span><strong>Co-PI:</strong> Md. Ashraful Islam</span>
+            <span><strong>Partner:</strong> Dept. of Mechanical Engineering, CUET</span>
+          </div>
+          <p>
+            Developing a hybrid water-energy harvesting system for water-scarce tribal communities in hilly regions of Bangladesh,
+            integrating rooftop rainwater harvesting, surface runoff storage, and a <strong>Small Hydroelectric Plant (SHP)</strong> for decentralized energy recovery.
+          </p>
+          <ul class="card-bullets">
+            <li>Conducted high-resolution UAV drone surveys to generate an accurate Digital Terrain Model (DTM) of the study area.</li>
+            <li>Developed an <strong>HEC-HMS</strong> hydrologic model to simulate runoff generation under varying rainfall conditions and optimize storage sizing.</li>
+            <li>Also supervised a companion GIS &amp; AHP Multi-Criteria Decision-Making (MCDM) suitability study across 14 biophysical and socio-economic criteria in northwestern Bangladesh (validated via sensitivity &amp; Kappa accuracy analysis).</li>
+          </ul>
+          <div class="mini-gallery">
+            <img src="../assets/img/projects/rwh-orthomosaic.jpg" alt="High-resolution UAV Drone Orthomosaic & DTM of Kinitheu hilly study area">
+            <img src="../assets/img/projects/rwh-drone-1.jpg" alt="Drone survey field operation for Hybrid Rainwater Harvesting project">
+            <img src="../assets/img/projects/rwh-drone-2.jpg" alt="Aerial view of hilly watershed terrain and community settlement">
+            <img src="../assets/img/projects/rwh-fig7.png" alt="GIS-MCDM Rainwater Harvesting Suitability Map across scenarios">
+            <img src="../assets/img/projects/rwh-fig9b.png" alt="Spatial distribution of Rainwater Harvesting Potential Index">
+            <img src="../assets/img/projects/rwh-fig10.jpg" alt="Random accuracy assessment points for Kappa validation of RWH suitability">
+          </div>
+          <div class="card-links">
+            <a class="tag-link" href="https://doi.org/10.21203/rs.3.rs-8449542/v1" target="_blank" rel="noopener">GIS-MCDM Preprint (DOI) ↗</a>
+            <a class="tag-link" href="https://dx.doi.org/10.2139/ssrn.5913462" target="_blank" rel="noopener">SSRN Preprint ↗</a>
+          </div>
+        </div>
+
+        <!-- Project 2: Multi-Hazard Coastal Resilience -->
+        <div class="card reveal">
+          <div class="badge-row">
+            <span class="badge">Ongoing · Sep 2025 – Aug 2026</span>
+            <span class="badge badge-teal">Co-PI · USD 5,000 (DRE CUET)</span>
+          </div>
+          <h3>Multi-Hazard Resilience Assessment of Coastal Communities for Earthquake and Storm Surge</h3>
+          <div class="card-meta">
+            <span><strong>Co-PI:</strong> Pollen Chakma</span>
+            <span><strong>PI:</strong> Md. Sohel Rana</span>
+            <span><strong>Partner:</strong> Institute of Earthquake Engineering Research (IEER), CUET</span>
+          </div>
+          <p>
+            An interdisciplinary investigation assessing the compound vulnerability and resilience of coastal communities in Bangladesh
+            exposed to both seismic hazards and tropical cyclone-induced storm surges.
+          </p>
+          <ul class="card-bullets">
+            <li>Collaborating with the Institute of Earthquake Engineering Research (IEER), CUET to develop multi-hazard risk reduction and adaptive planning frameworks.</li>
+            <li>Collected and digitized historical and contemporary hydrographic charts of the nearshore coastal zone.</li>
+            <li>Developed a flexible-mesh hydrodynamic tide and surge model in <strong>Delft3D-FM</strong> by integrating global bathymetry (GEBCO) with high-resolution digitized nearshore hydrographic datasets.</li>
+          </ul>
+          <div class="mini-gallery">
+            <img src="../assets/img/projects/ra-circular.jpg" alt="Graduate Research Assistant recruitment circular for Multi-Hazard Coastal Resilience Project (IEER, CUET)">
+          </div>
+          <div class="card-links">
+            <a class="tag-link" href="../posts/">Read Grant Announcement →</a>
+          </div>
+        </div>
+
+        <!-- Project 3: Urban Flood Modelling -->
+        <div class="card reveal">
+          <div class="badge-row">
+            <span class="badge">Ongoing · Sep 2025 – Aug 2026</span>
+            <span class="badge badge-teal">Co-PI · USD 5,000 (DRE CUET)</span>
+          </div>
+          <h3>Assessing the Impact of Climate Change on Urban Flooding in Chattogram City Using Mathematical Modelling</h3>
+          <div class="card-meta">
+            <span><strong>Co-PI:</strong> Pollen Chakma</span>
+            <span><strong>PI:</strong> Md. Samiun Basir</span>
+            <span><strong>Funding:</strong> DRE, CUET</span>
+          </div>
+          <p>
+            Investigating the impact of climate change–driven extreme rainfall on urban waterlogging and flash flooding in data-scarce
+            coastal cities of Bangladesh, focusing on Chattogram city.
+          </p>
+          <ul class="card-bullets">
+            <li>Developed a comprehensive methodological framework for coupled hydrologic–hydraulic flood modelling in ungauged urban watersheds.</li>
+            <li>Conducting extensive field surveys across urban catchments to measure stormwater drain widths, cross-sections, and invert elevations.</li>
+            <li>Developing an integrated urban drainage model in <strong>EPA-SWMM</strong> alongside a 2D <strong>Rain-on-Grid model in HEC-RAS</strong> using a 3-m resolution LiDAR DEM and field-surveyed drainage geometry.</li>
+          </ul>
+          <div class="card-links">
+            <a class="tag-link" href="../publications/?q=Flood">Related Flood Modelling Papers →</a>
+          </div>
+        </div>
+
+        <!-- Project 4: Cyclone Amphan Storm Surge Modelling -->
+        <div class="card reveal" id="storm-surge-project">
+          <div class="badge-row">
+            <span class="badge badge-amber">Completed · Jan 2023 – Oct 2024</span>
+            <span class="badge">PI · USD 3,000 (DRE Graduate Grant)</span>
+          </div>
+          <h3>Storm Surge Inundation Modelling for Cyclone Amphan (2020) in Bangladesh</h3>
+          <div class="card-meta">
+            <span><strong>Researcher:</strong> Pollen Chakma (M.Sc. Thesis)</span>
+            <span><strong>Supervisor:</strong> Prof. Dr. Aysha Akter (CUET)</span>
+          </div>
+          <p>
+            Simulated tropical cyclone–induced storm surge propagation and coastal inundation along the funnel-shaped Bay of Bengal coast
+            using Super Cyclone Amphan (2020) as a benchmark case study.
+          </p>
+          <ul class="card-bullets">
+            <li>Developed a coupled hydrodynamic and wave model using <strong>Delft3D-FLOW</strong> and <strong>Delft3D-WAVE</strong> to capture wave-current interaction during landfall.</li>
+            <li>Generated parametric wind and pressure fields using both <strong>IMD</strong> and <strong>JTWC</strong> best-track datasets to evaluate sensitivity to meteorological forcing.</li>
+            <li>Validated coastal inundation extent against <strong>Sentinel-1 SAR</strong> satellite observations and identified 3 critical limitations of surge modelling in data-scarce deltas.</li>
+            <li>Resulted in 1 published journal article (<em>J. Civil Engineering Forum</em>, 2021) and 1 manuscript under review in <em>Journal of Natural Hazards</em>.</li>
+          </ul>
+          <div class="card-links">
+            <a class="tag-link" href="https://doi.org/10.22146/jcef" target="_blank" rel="noopener">Published SAR Paper (DOI) ↗</a>
+            <a class="tag-link" href="../software/#flood-sar">Launch SAR Flood App →</a>
+          </div>
+        </div>
+
+        <!-- Project 5: ETCCDI Climate Extremes -->
+        <div class="card reveal">
+          <div class="badge-row">
+            <span class="badge badge-amber">Completed · Jan 2025 – Jul 2025</span>
+            <span class="badge">Research Lead · WRE, CUET</span>
+          </div>
+          <h3>Long-Term Spatiotemporal Variability Analysis of Precipitation Climate Extreme Indices (1981–2024)</h3>
+          <div class="card-meta">
+            <span><strong>Role:</strong> Research Lead (First Author)</span>
+            <span><strong>Co-Author:</strong> Anika Sirajee</span>
+          </div>
+          <p>
+            Evaluated 43 years (1981–2024) of daily satellite precipitation data to quantify how climate change is altering rainfall intensity,
+            frequency, and wet/dry spell duration across southeastern Bangladesh.
+          </p>
+          <ul class="card-bullets">
+            <li>Processed 43 years of <strong>CHIRPS</strong> daily satellite rainfall in <strong>Google Earth Engine (GEE)</strong> to compute ETCCDI indices (PRCPTOT, Rx1day, Rx5day, R10mm, R20mm, R95p, R99p, CDD, CWD).</li>
+            <li>Applied non-parametric <strong>Mann–Kendall</strong> trend tests and <strong>Sen's slope estimator</strong> (via Python's <code>pyMannKendall</code>) and identified statistically significant increasing trends in extreme wet indices.</li>
+            <li>Published in <em>ICCEI 2025</em> and deployed as a public interactive GEE decision-support web app.</li>
+          </ul>
+          <div class="card-links">
+            <a class="tag-link" href="https://icceiruet.org/wp-content/uploads/2025/12/676_Camera-Ready-Final-Paper_ICCEI-2025.pdf" target="_blank" rel="noopener">Conference Paper (PDF) ↗</a>
+            <a class="tag-link" href="https://pollenchakmacuet.projects.earthengine.app/view/etccdi-precipitation-climate-extreme-indices" target="_blank" rel="noopener">Launch ETCCDI GEE App ↗</a>
+          </div>
+        </div>
+
+        <!-- Project 6: Groundwater Recharge & MFC -->
+        <div class="card reveal">
+          <div class="badge-row">
+            <span class="badge badge-amber">Completed · 2016 – 2020</span>
+            <span class="badge">Early Research Projects · CUET</span>
+          </div>
+          <h3>Groundwater Recharge Estimation &amp; Microbial Fuel Cell (MFC) Evaluation</h3>
+          <div class="card-meta">
+            <span><strong>Supervisors:</strong> Md. Rifat Talha Khan (WRE) &amp; Prof. Dr. Sudip Kumar Pal (CE)</span>
+          </div>
+          <p>
+            Foundational hydrogeological and environmental engineering research conducted at CUET:
+          </p>
+          <ul class="card-bullets">
+            <li><strong>Groundwater Recharge (2019–2020):</strong> Analyzed weekly groundwater table observations from 10 monitoring wells across 5 urban districts in Bangladesh using the Water Table Fluctuation (WTF) method and borelog-derived specific yield (published in <em>ICCESD 2020</em>).</li>
+            <li><strong>B.Sc. Thesis — Microbial Fuel Cell (2016–2017):</strong> Designed and constructed a two-chamber Microbial Fuel Cell (MFC) utilizing household anaerobic activated wastewater and evaluated bio-electrochemical power generation efficiency.</li>
+          </ul>
+          <div class="card-links">
+            <a class="tag-link" href="http://iccesd.com/proc_2020/Papers/WRE-4422.pdf" target="_blank" rel="noopener">Groundwater Paper (PDF) ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPLIED CONSULTING & FIELD PROJECTS ============ -->
+  <section class="section soft" id="applied-projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Applied Engineering &amp; Consulting</div>
+        <h2>Geospatial surveying, drone photogrammetry &amp; rural water supply</h2>
+        <p class="sub">Translating engineering research into field-scale infrastructure and environmental management with international development partners (German Government, Government of Japan, RENATA Ltd.).</p>
+      </div>
+
+      <div class="card-grid">
+        <!-- SCIP Project -->
+        <div class="card reveal">
+          <span class="badge">Sep 2025 – Nov 2025 · German Govt. Funded</span>
+          <h3>SCIP Plastic Pollution &amp; Waste Dumping Site Drone Mapping Project</h3>
+          <div class="card-meta">
+            <span><strong>Role:</strong> Geospatial &amp; Surveying Specialist</span>
+            <span><strong>Location:</strong> CUET, Chattogram</span>
+          </div>
+          <p>
+            Under the <em>Sustainable Capacity Building to Reduce Irreversible Pollution by Plastics (SCIP)</em> project funded by the German Government,
+            conducted UAV drone surveys across the study area to identify, map, and spatially analyze <strong>27 solid waste dumping sites</strong>.
+            Generated high-resolution orthomosaics in <strong>WebODM / Pix4D</strong> and quantified hotspot areas in <strong>QGIS</strong>.
+          </p>
+          <div class="mini-gallery">
+            <img src="../assets/img/projects/scip-1.jpg" alt="SCIP Project UAV Drone Survey — Dumping Site Aerial View 1">
+            <img src="../assets/img/projects/scip-2.jpg" alt="SCIP Project UAV Drone Survey — Dumping Site Aerial View 2">
+            <img src="../assets/img/projects/scip-3.jpg" alt="SCIP Project UAV Drone Survey — Dumping Site Aerial View 3">
+            <img src="../assets/img/projects/scip-4.jpg" alt="SCIP Project UAV Drone Survey — Dumping Site Aerial View 4">
+            <img src="../assets/img/projects/scip-5.jpg" alt="SCIP Project UAV Drone Survey — Dumping Site Aerial View 5">
+            <img src="../assets/img/projects/scip-6.jpg" alt="SCIP Project UAV Drone Survey — Dumping Site Aerial View 6">
+          </div>
+          <div class="card-links">
+            <a class="tag-link" href="https://www.google.com/maps/d/u/0/embed?mid=1gJQUPV2ELQUGnhk8_X3kYEu_DpaO_Do&ehbc=2E312F&ll=22.464204288317163%2C91.9705611231698&z=15" target="_blank" rel="noopener">Interactive Dumping Sites Map ↗</a>
+          </div>
+        </div>
+
+        <!-- Sewer Design CUET -->
+        <div class="card reveal">
+          <span class="badge badge-teal">Nov 2025 – Present · CUET Campus</span>
+          <h3>Sewer Design Project at CUET Campus</h3>
+          <div class="card-meta">
+            <span><strong>Role:</strong> Geospatial &amp; Surveying Specialist</span>
+            <span><strong>Software:</strong> Drone DTM · SewerGEMS</span>
+          </div>
+          <p>
+            Supporting modern wastewater and sewer infrastructure planning at Chittagong University of Engineering and Technology (CUET):
+          </p>
+          <ul class="card-bullets">
+            <li>Conducted high-precision UAV drone photogrammetric surveys and generated a centimetre-scale Digital Terrain Model (DTM) along a 300-ft, two-lane campus corridor.</li>
+            <li>Integrated UAV-derived topographic elevation rasters directly into <strong>Bentley SewerGEMS</strong> to support hydraulic grade line and sewer network design.</li>
+          </ul>
+          <div class="card-links">
+            <a class="tag-link" href="../cv/#consulting">View in CV →</a>
+          </div>
+        </div>
+
+        <!-- Kinitheu Water Supply -->
+        <div class="card reveal">
+          <span class="badge badge-amber">May 2019 – Dec 2019 · Japan Govt. &amp; RENATA</span>
+          <h3>Kinitheu Tribal School Water Supply Project, Bandarban</h3>
+          <div class="card-meta">
+            <span><strong>Role:</strong> Technical Specialist (Hydraulic Design)</span>
+            <span><strong>Location:</strong> Bandarban Hill Tracts</span>
+          </div>
+          <p>
+            Designed a complete, off-grid sustainable water supply system for 50+ resident children at a remote tribal residential school in the Bandarban hills,
+            overcoming a <strong>~400-ft elevation difference</strong> from the mountain stream (<em>jhiri</em>).
+          </p>
+          <ul class="card-bullets">
+            <li>Designed a solar-powered water lifting and collection pumping system for off-grid operation.</li>
+            <li>Designed a pretreatment sedimentation tank, elevated gravity storage tank, and integrated rooftop rainwater harvesting.</li>
+          </ul>
+          <div class="mini-gallery">
+            <img src="../assets/img/projects/kinitheu-1.jpg" alt="Kinitheu School Water Supply Project — Solar-powered water supply installation in Bandarban">
+            <img src="../assets/img/projects/kinitheu-2.jpg" alt="Kinitheu School Water Supply Project — Storage and sedimentation tank construction">
+            <img src="../assets/img/projects/kinitheu-3.jpg" alt="Kinitheu School Water Supply Project — Topographic survey in Bandarban hills">
+            <img src="../assets/img/projects/kinitheu-5.jpg" alt="Kinitheu School Water Supply Project — Mountain stream (jhiri) intake site">
+            <img src="../assets/img/projects/kinitheu-6.jpg" alt="Kinitheu School Water Supply Project — Field engineering team">
+            <img src="../assets/img/projects/kinitheu-8.jpg" alt="Kinitheu School Water Supply Project — Completed water infrastructure">
+          </div>
+          <div class="card-links">
+            <a class="tag-link" href="../posts/#kinitheu-story">Read Full Field Story →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout reveal" style="margin-top: 32px;">
+        <div class="supported-by">
+          <div class="supported-label">Research Funders &amp; Development Partners</div>
+          <div class="funder-row">
+            <span class="funder">Directorate of Research &amp; Extension (DRE), CUET</span>
+            <span class="funder">United Nations Development Programme (UNDP)</span>
+            <span class="funder">German Government (SCIP Project)</span>
+            <span class="funder">World Bank &amp; Govt. of Bangladesh (EDGE)</span>
+            <span class="funder">Government of Japan</span>
+            <span class="funder">RENATA Ltd., Bangladesh</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COLLABORATION NETWORK ============ -->
+  <section class="section" id="network">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Collaboration Network</div>
+        <h2>Co-authors &amp; research collaborators</h2>
+        <p class="sub">Interactive map of faculty collaborators, research assistants, and thesis advisees across our publications and funded research grants.</p>
+      </div>
+      <div id="coauthor-network" class="reveal"></div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH TEAM / LAB ============ -->
+  <section class="section soft" id="lab">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Research Group</div>
+        <h2>Current research assistants</h2>
+        <p class="sub">Motivated undergraduate researchers working on urban flood modelling, rainwater harvesting, coastal hazards, remote sensing, and machine learning in water resources engineering.</p>
+      </div>
+      <div class="people-grid">
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/hera-dutta.jpg" alt="Hera Dutta" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="avatar" style="display:none">HD</div>
+          <h3>Hera Dutta</h3>
+          <div class="role">Undergraduate Research Assistant</div>
+          <p>4th Year · WRE, CUET</p>
+          <p class="statement"><strong>Research Interests:</strong> Urban Flood Modelling, Rainwater Harvesting, GIS &amp; MCDM.</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/mushfiqul-alam.jpg" alt="Md. Mushfiqul Alam" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="avatar" style="display:none">MA</div>
+          <h3>Md. Mushfiqul Alam</h3>
+          <div class="role">Undergraduate Research Assistant</div>
+          <p>4th Year · WRE, CUET</p>
+          <p class="statement"><strong>Research Interests:</strong> Urban Flood Modelling, Rainwater Harvesting, Spatial Analysis.</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/female-avatar.jpg" alt="Sehba Yeamin" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="avatar" style="display:none">SY</div>
+          <h3>Sehba Yeamin</h3>
+          <div class="role">Undergraduate Research Assistant</div>
+          <p>4th Year · WRE, CUET</p>
+          <p class="statement"><strong>Research Interests:</strong> Rainwater Harvesting, Coastal Flood Hazard, Remote Sensing in WRE.</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/atikur-rahman.jpg" alt="Md. Atikur Rahman" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="avatar" style="display:none">AR</div>
+          <h3>Md. Atikur Rahman</h3>
+          <div class="role">Undergraduate Research Assistant</div>
+          <p>3rd Year · WRE, CUET</p>
+          <p class="statement"><strong>Research Interests:</strong> Storm Surge Modelling, Machine Learning Applications in WRE.</p>
+        </div>
+      </div>
+
+      <!-- Supervised Thesis Students -->
+      <div class="section-head reveal" style="margin-top: 56px;">
+        <div class="eyebrow">Thesis Supervision</div>
+        <h2>Undergraduate thesis advisees</h2>
+        <p class="sub">I have supervised 10+ undergraduate theses across Batch 2018–19 and Batch 2019–20, resulting in multiple peer-reviewed international conference publications.</p>
+      </div>
+
+      <div class="people-grid">
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/female-avatar.jpg" alt="Anika Sirajee">
+          <h3>Anika Sirajee</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 18)</div>
+          <p>Cloud-Based Rainfall-Runoff Model &amp; ETCCDI Indices in GEE (2 ICCEI Papers)</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/modasshir-rokon.jpg" alt="Md. Modasshir Rokon">
+          <h3>Md. Modasshir Rokon</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Upper Padma &amp; Ganges River Surface Water Dynamics (3 Conference Papers)</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/female-avatar.jpg" alt="Rubayatul Islam Oishe">
+          <h3>Rubayatul Islam Oishe</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Upper Padma &amp; Ganges River Surface Water Dynamics (3 Conference Papers)</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/abdullah-al-mahmud.jpg" alt="Abdullah Al Mahmud">
+          <h3>Abdullah Al Mahmud</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 18)</div>
+          <p>Flood Inundation Mapping of Upper Meghna River Using HEC-RAS 2D (ICCEI 2025)</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/araf-annwoy.jpg" alt="Araf Bin Haque Annwoy">
+          <h3>Araf Bin Haque Annwoy</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 18)</div>
+          <p>Flood Inundation Mapping of Upper Meghna River Using HEC-RAS 2D (ICCEI 2025)</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/sheikh-farid.jpg" alt="Md. Sheikh Farid">
+          <h3>Md. Sheikh Farid</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Flood Damage Assessment Using Sentinel-1 SAR Data</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/rakib-mia.png" alt="Md. Rakib Mia">
+          <h3>Md. Rakib Mia</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Flood Damage Assessment Using Sentinel-1 SAR Data</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/aminul-islam.jpg" alt="Md. Aminul Islam">
+          <h3>Md. Aminul Islam</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Spatiotemporal Analysis of Drought in Bangladesh Using Multi-Index Remote Sensing</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/saiedul-islam-jamil.png" alt="Md. Saiedul Islam Jamil">
+          <h3>S. M. Sayedul Islam Jamil</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Spatiotemporal Analysis of Drought in Bangladesh Using Multi-Index Remote Sensing</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/pranta.jpg" alt="Md. Tasmin Haque Pranto">
+          <h3>Md. Tasmin Haque Pranto</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Flood Hazard Mapping for Faridpur &amp; Manikganj Using HEC-RAS and MCA</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/abrar-galib.jpg" alt="Abrar Galib Bhuiyan">
+          <h3>Abrar Galib Bhuiyan</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Flood Hazard Mapping for Faridpur &amp; Manikganj Using HEC-RAS and MCA</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/ishtiaque.jpg" alt="Ishtiaque Chowdhury">
+          <h3>Ishtiaque Chowdhury</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Entropy-Weighted Flood Hazard Mapping: Case Study of Sunamganj District</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/zamil-khan.jpg" alt="Md. Zamil Khan">
+          <h3>Md. Zamil Khan</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 19)</div>
+          <p>Entropy-Weighted Flood Hazard Mapping: Case Study of Sunamganj District</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/akib-malik.jpg" alt="Md. Akib Malik">
+          <h3>Md. Akib Malik</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 18)</div>
+          <p>Assessing Urbanization Effects on Flood Events Using HEC-HMS in Sylhet</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/muntasir-mahmud.jpg" alt="Md. Muntasir Mahmud">
+          <h3>Md. Muntasir Mahmud</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 18)</div>
+          <p>Flood Inundation Mapping of Teesta River</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/farez.png" alt="Farez">
+          <h3>Farez</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 18)</div>
+          <p>Flood Inundation Mapping of Teesta River</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/udoy-paul.jpg" alt="Udoy Paul">
+          <h3>Udoy Paul</h3>
+          <div class="role">Undergraduate Supervisee</div>
+          <p>Department of Water Resources Engineering, CUET</p>
+        </div>
+        <div class="person reveal">
+          <img class="avatar-photo" src="../assets/img/team/tushar-chowdhury.jpg" alt="Tushar Chowdhury">
+          <h3>Tushar Chowdhury</h3>
+          <div class="role">Undergraduate Supervisee</div>
+          <p>Department of Water Resources Engineering, CUET</p>
+        </div>
+        <div class="person reveal">
+          <div class="avatar">MM</div>
+          <h3>Md. Mahbub</h3>
+          <div class="role">B.Sc. Thesis Advisee (Batch 18)</div>
+          <p>Flood Inundation Mapping in the Jamuna River Using HEC-RAS 2D Model</p>
+        </div>
+      </div>
+
+      <div class="callout callout-full reveal" style="margin-top: 38px;">
+        <h3>Interested in joining the research group?</h3>
+        <p>
+          I actively welcome motivated undergraduate and graduate students interested in storm surge modelling,
+          hydrologic/hydrodynamic modelling, remote sensing (Google Earth Engine), and AI/ML applications in water resources.
+          Read our <a href="../contact/#prospective-students">Prospective Student &amp; Research Opportunity Guidelines</a> to apply.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="foot-brand">Pollen Chakma<span style="color: var(--accent);">.</span></div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="./">Research</a>
+        <a href="../publications/">Publications</a>
+        <a href="../software/">Apps &amp; Tools</a>
+        <a href="../teaching/">Teaching</a>
+        <a href="../cv/">CV</a>
+        <a href="../posts/">Blog &amp; Gallery</a>
+        <a href="../contact/">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-meta">
+      <span>© <span id="footer-year">2026</span> Pollen Chakma · Department of Water Resources Engineering, CUET</span>
+      <span>Chattogram-4349, Bangladesh</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../data/publications.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog &amp; Gallery — Pollen Chakma</title>
+  <meta name="description" content="Research blog posts, field stories, grant announcements, and photo gallery of Pollen Chakma at CUET.">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="../">Pollen Chakma<span class="brand-dot">.</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="../research/">Research</a>
+      <a href="../publications/">Publications</a>
+      <a href="../software/">Apps &amp; Tools</a>
+      <a href="../teaching/">Teaching</a>
+      <a href="../cv/">CV</a>
+      <a href="./" class="active">Blog &amp; Gallery</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Blog &amp; Photo Gallery</h1>
+      <p>
+        Field notes, research grant announcements, student milestones, and photographs from
+        UAV drone surveys, field visits, academic workshops, and departmental programs at CUET.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;">
+        <a class="tag-link" href="#blog-posts">Blog Posts &amp; Field Stories</a>
+        <a class="tag-link" href="#field-gallery">Field Visits &amp; Drone Surveys</a>
+        <a class="tag-link" href="#seminars-gallery">Seminars, Workshops &amp; Department</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLOG POSTS ============ -->
+  <section class="section" id="blog-posts">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Blog &amp; Updates</div>
+        <h2>Stories from the lab &amp; field</h2>
+      </div>
+
+      <div class="blog-filters reveal" role="toolbar" aria-label="Filter posts by category">
+        <button class="blog-chip is-active" type="button" data-blog-filter="all">All Posts (5)</button>
+        <button class="blog-chip" type="button" data-blog-filter="grants">Research Grants</button>
+        <button class="blog-chip" type="button" data-blog-filter="field">Field Projects</button>
+        <button class="blog-chip" type="button" data-blog-filter="milestones">Lab Milestones</button>
+        <button class="blog-chip" type="button" data-blog-filter="opportunities">Opportunities</button>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Post 1: SCIP Project -->
+        <article class="blog-card reveal" data-blog-cat="field">
+          <div class="blog-thumb">
+            <img src="../assets/img/projects/scip-1.jpg" alt="SCIP Project — Drone Photogrammetry Mapping of Solid Waste Dumping Sites">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">October 24, 2025 · Field Projects</div>
+            <h3 class="blog-title">SCIP Project: Drone Photogrammetry for Plastic Pollution Reduction</h3>
+            <p class="blog-desc">
+              Conducted at CUET and funded by the German Government, this initiative generated high-resolution spatial evidence to inform waste management.
+              As a Geospatial and Survey Consultant, I carried out detailed UAV drone surveys to identify, map, and assess 27 solid waste dumping sites using WebODM and QGIS.
+            </p>
+            <ul class="blog-tags">
+              <li class="blog-tag">UAV Drone Survey</li>
+              <li class="blog-tag">WebODM &amp; QGIS</li>
+              <li class="blog-tag">German Govt. Funded</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Post 2: GRA Opportunities -->
+        <article class="blog-card reveal" data-blog-cat="opportunities">
+          <div class="blog-thumb">
+            <img src="../assets/img/projects/ra-circular.jpg" alt="Graduate Research Assistant Opportunity Circular — Multi-Hazard Resilience Project">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">October 16, 2025 · Opportunities</div>
+            <h3 class="blog-title">GRA Opportunity: Multi-Hazard Resilience Assessment of Coastal Communities</h3>
+            <p class="blog-desc">
+              <em>Update: The application window has closed. Thank you to all applicants!</em>
+              Recruited a Research Assistant (RA) for our DRE-funded project “Multi-hazard Resilience Assessment of Coastal Communities for Earthquake and Storm Surge” in collaboration with IEER, CUET.
+            </p>
+            <ul class="blog-tags">
+              <li class="blog-tag">Research Assistant</li>
+              <li class="blog-tag">Coastal Resilience</li>
+              <li class="blog-tag">IEER CUET</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Post 3: Three New Research Grants -->
+        <article class="blog-card reveal" data-blog-cat="grants">
+          <div class="blog-thumb">
+            <img src="../assets/img/profile-cuet.jpg" alt="Pollen Chakma — Securing Three New Research Grants from DRE, CUET">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">September 13, 2025 · Research Grants</div>
+            <h3 class="blog-title">Securing Three New Research Grants from the Directorate of Research &amp; Extension (DRE), CUET</h3>
+            <p class="blog-desc">
+              Delighted to receive three competitive DRE research grants totaling USD 15,000 for 2025–2026:
+              (1) <strong>PI</strong> on <em>Hybrid Rainwater Harvesting System for Water-Scarce Hilly Regions</em> ($5,000),
+              (2) <strong>Co-PI</strong> on <em>Multi-Hazard Resilience of Coastal Communities</em> ($5,000), and
+              (3) <strong>Co-PI</strong> on <em>Climate Change and Urban Flooding in Chattogram City</em> ($5,000).
+            </p>
+            <ul class="blog-tags">
+              <li class="blog-tag">DRE Grants ($15K)</li>
+              <li class="blog-tag">Rainwater Harvesting</li>
+              <li class="blog-tag">Urban &amp; Coastal Floods</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Post 4: Batch 19 Thesis Defenses -->
+        <article class="blog-card reveal" data-blog-cat="milestones">
+          <div class="blog-thumb">
+            <img src="../assets/img/gallery/seminar-1.jpg" alt="Batch 19 Undergraduate Thesis Defenses at WRE, CUET">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">July 20, 2025 · Lab Milestones</div>
+            <h3 class="blog-title">Successful B.Sc. Thesis Defenses of Batch 19 Supervisees</h3>
+            <p class="blog-desc">
+              Thrilled to announce that my 10 undergraduate supervisees from Batch 19 have successfully defended their B.Sc. theses!
+              Guiding them from conceptualizing research questions to remote sensing/HEC-RAS modelling and conference publication has been immensely rewarding.
+            </p>
+            <ul class="blog-tags">
+              <li class="blog-tag">Thesis Supervision</li>
+              <li class="blog-tag">Batch 19 WRE</li>
+              <li class="blog-tag">Student Success</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Post 5: Kinitheu Water Supply Project -->
+        <article class="blog-card reveal" data-blog-cat="field" id="kinitheu-story">
+          <div class="blog-thumb">
+            <img src="../assets/img/projects/kinitheu-1.jpg" alt="Kinitheu Water Supply System Designing Project in Bandarban Hills">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">May 23, 2019 · Field Projects</div>
+            <h3 class="blog-title">Kinitheu Water Supply System Design — Japan Government Funded Project</h3>
+            <p class="blog-desc">
+              In the remote hill tracts of Bandarban, over 50 children at a residential child care center previously climbed down nearly 200–400 feet daily to fetch water from a mountain stream (<em>jhiri</em>).
+              We designed a solar-powered water lifting pump, elevated gravity storage &amp; sedimentation tanks, and rainwater harvesting system to bring safe drinking water directly to their premises.
+            </p>
+            <details class="app-details">
+              <summary>Read Full Bandarban Field Story</summary>
+              <p style="margin-top:8px;font-size:0.86rem;">
+                With no municipal water connection and no grid electricity, solar energy became the most practical and sustainable choice to lift water from the <em>jhiri</em> to a high-elevation storage tank near the child care center.
+                Pretreatment sedimentation and rooftop rainwater harvesting were integrated for dry-season water security—transforming daily health, safety, and study time for 50+ resident students.
+              </p>
+            </details>
+            <ul class="blog-tags">
+              <li class="blog-tag">Solar Water Pumping</li>
+              <li class="blog-tag">Bandarban Hill Tracts</li>
+              <li class="blog-tag">Japan Govt. Funded</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHOTO GALLERY: FIELD VISITS & SURVEYS ============ -->
+  <section class="section soft" id="field-gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Photo Gallery</div>
+        <h2>Field visits, drone surveys &amp; rural water projects</h2>
+        <p class="sub">Snapshots from topographic and UAV drone surveys, coastal/hilly fieldwork, and water supply installations. Click any photo to view full screen.</p>
+      </div>
+      <div class="photo-gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/field-visit-1.jpg" alt="Field Visit & Topographic Survey with WRE Students">
+          <div class="gal-cap">Field Visit &amp; Survey Operations</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/field-visit-2.jpg" alt="UAV Drone Survey & Terrain Mapping Fieldwork">
+          <div class="gal-cap">UAV Drone Terrain Survey</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/field-visit-3.jpg" alt="Hilly Watershed Field Reconnaissance">
+          <div class="gal-cap">Watershed Field Reconnaissance</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/field-visit-4.jpg" alt="Hydrologic & Topographic Field Investigation">
+          <div class="gal-cap">Topographic Field Investigation</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/field-visit-5.jpg" alt="Field Survey Team in Hilly Catchment">
+          <div class="gal-cap">Hilly Catchment Survey Team</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/field-visit-6.jpg" alt="Drone Launch & Ground Control Survey">
+          <div class="gal-cap">UAV Photogrammetry Deployment</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/projects/kinitheu-1.jpg" alt="Kinitheu Water Supply System — Bandarban Hill Tracts">
+          <div class="gal-cap">Kinitheu Water Supply Project (Bandarban)</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/projects/kinitheu-2.jpg" alt="Kinitheu Water Tank & Solar Pumping Infrastructure">
+          <div class="gal-cap">Kinitheu Storage &amp; Treatment Facility</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHOTO GALLERY: SEMINARS & DEPARTMENTAL PROGRAMS ============ -->
+  <section class="section" id="seminars-gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Academic Community</div>
+        <h2>Seminars, workshops &amp; departmental programs</h2>
+        <p class="sub">Seminar on Hydraulic Structures, technical workshops, and departmental events at the Department of Water Resources Engineering, CUET.</p>
+      </div>
+      <div class="photo-gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/seminar-1.jpg" alt="Seminar on Hydraulic Structure, Department of Water Resources Engineering, CUET">
+          <div class="gal-cap">Seminar on Hydraulic Structure, WRE, CUET</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/seminar-2.jpg" alt="Academic Workshop & Technical Session at CUET">
+          <div class="gal-cap">Academic Seminar &amp; Technical Session</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/seminar-3.jpg" alt="Faculty & Invited Speakers at WRE Seminar, CUET">
+          <div class="gal-cap">WRE Seminar Discussion Panel, CUET</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="../assets/img/gallery/dept-program-1.png" alt="Departmental Program — Department of Water Resources Engineering, CUET">
+          <div class="gal-cap">Departmental Program, WRE, CUET</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="foot-brand">Pollen Chakma<span style="color: var(--accent);">.</span></div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="../research/">Research</a>
+        <a href="../publications/">Publications</a>
+        <a href="../software/">Apps &amp; Tools</a>
+        <a href="../teaching/">Teaching</a>
+        <a href="../cv/">CV</a>
+        <a href="./">Blog &amp; Gallery</a>
+        <a href="../contact/">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-meta">
+      <span>© <span id="footer-year">2026</span> Pollen Chakma · Department of Water Resources Engineering, CUET</span>
+      <span>Chattogram-4349, Bangladesh</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
